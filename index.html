@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEHAR Studio | Modern Fashion Store</title>
+    <meta name="description" content="SEHAR Studio - premium lawn, ready-to-wear and accessories. Shop online and order directly via WhatsApp.">
+    <meta property="og:title" content="SEHAR Studio | Modern Fashion Store">
+    <meta property="og:description" content="Premium clothing and accessories designed for every occasion. Order online or via WhatsApp.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%91%97</text></svg>">
+    <style>
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #faf9f6; color: #222; }
+        
+        /* Sticky Navigation Bar */
+        header { background: #111; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { color: #fff; font-size: 26px; font-weight: bold; letter-spacing: 3px; }
+        nav a { color: #ccc; text-decoration: none; margin-left: 20px; font-size: 15px; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: #d4af37; }
+
+        /* Banner Section */
+        #home { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000') center/cover; height: 85vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 0 20px; }
+        #home h1 { font-size: 52px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 2px; }
+        #home p { font-size: 20px; margin-bottom: 25px; max-width: 600px; }
+        .btn { background: #d4af37; color: #fff; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 4px; display: inline-block; transition: 0.3s; }
+        .btn:hover { background: #b8952b; }
+
+        /* Sections General */
+        section { padding: 60px 5%; }
+        .section-title { text-align: center; font-size: 32px; margin-bottom: 10px; text-transform: uppercase; color: #111; }
+        .section-subtitle { text-align: center; font-size: 16px; color: #666; margin-bottom: 40px; }
+
+        /* Product Grid */
+        .products-grid { display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; }
+        .product-card { background: white; width: 260px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.06); text-align: center; padding-bottom: 20px; transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-card img { width: 100%; height: 320px; object-fit: cover; }
+        .product-card h3 { font-size: 18px; margin: 15px 0 5px; color: #222; }
+        .product-card p { font-size: 13px; color: #777; margin-bottom: 10px; }
+        .price { color: #d4af37; font-weight: bold; font-size: 18px; margin-bottom: 15px; }
+
+        /* Category Highlight Box */
+        .cat-banner { background: #f4f4f4; padding: 40px; border-radius: 8px; margin-bottom: 40px; text-align: center; }
+
+        /* About Section */
+        #about { background: #fff; text-align: center; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .about-box { max-width: 800px; margin: 0 auto; line-height: 1.8; color: #555; font-size: 17px; }
+
+        /* Contact Section */
+        #contact { text-align: center; }
+        .contact-card { max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        .whatsapp-btn { background: #25D366; color: white; padding: 14px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px; display: inline-block; margin: 20px 0; }
+        .store-info { text-align: left; border-top: 1px solid #eee; padding-top: 20px; margin-top: 20px; }
+        .store-info p { margin-bottom: 10px; color: #444; }
+
+        /* Footer */
+        /* PROFESSIONAL FOOTER */
+
+.professional-footer {
+    background: #111;
+    color: #ccc;
+    padding: 50px 5% 20px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-brand h2 {
+    color: #fff;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    line-height: 1.7;
+    color: #999;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h3 {
+    color: #d4af37;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d4af37;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+  /* DARK MODE */
+body.dark-mode {
+    background-color: #181818;
+    color: #f5f5f5;
+}
+
+body.dark-mode .section-title {
+    color: #ffffff;
+}
+
+body.dark-mode .section-subtitle {
+    color: #cccccc;
+}
+
+body.dark-mode .product-card {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+body.dark-mode .product-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .product-card p {
+    color: #cccccc;
+}
+
+body.dark-mode .cat-banner {
+    background-color: #242424;
+}
+
+body.dark-mode #about {
+    background-color: #181818;
+    border-color: #333;
+}
+
+body.dark-mode .about-box {
+    color: #cccccc;
+}
+
+body.dark-mode #contact {
+    background-color: #181818 !important;
+}
+
+body.dark-mode .contact-card {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+body.dark-mode .store-info {
+    border-color: #444;
+}
+
+body.dark-mode .store-info p {
+    color: #dddddd;
+}
+ #theme-toggle {
+    background: #d4af37;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+#theme-toggle:hover {
+    opacity: 0.85;
+}
+/* SHOPPING CART */
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-box {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cart-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.close-cart {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #555;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item-info h4 {
+    margin-bottom: 5px;
+}
+
+.cart-item-info p {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-controls button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: #111;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-item {
+    background: #c0392b;
+    color: white;
+    border: none;
+    padding: 6px 9px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background: #d4af37;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: #b8952b;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #777;
+    padding: 30px 0;
+}
+/* ✨ PROFESSIONAL PRODUCT EFFECT */
+
+.product-card {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.04);
+}
+
+.product-card .btn {
+    transition: all 0.3s ease;
+}
+
+.product-card .btn:hover {
+    transform: scale(1.05);
+}
+
+/* ⬆️ BACK TO TOP BUTTON */
+
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #d4af37;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1500;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#backToTop:hover {
+    transform: translateY(-3px);
+}
+/* 📱 MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 13px;
+    }
+
+    #theme-toggle {
+        margin-left: 0;
+    }
+
+    #home {
+        height: 80vh;
+        padding: 20px;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 45px 15px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .products-grid {
+        gap: 20px;
+    }
+
+    .cart-box {
+        width: 94%;
+        padding: 25px 15px;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+}
+/* ===== PREMIUM WEBSITE FINISH ===== */
+
+section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.section-title {
+    letter-spacing: 1px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.product-card .price {
+    letter-spacing: 1px;
+}
+
+.btn {
+    letter-spacing: 0.5px;
+}
+
+.contact-card {
+    border: 1px solid #eee;
+}
+
+.whatsapp-btn {
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37,211,102,0.25);
+}
+
+/* Premium search bar */
+#product-search {
+    transition: 0.3s ease;
+}
+
+#product-search:focus {
+    border-color: #d4af37 !important;
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.15);
+}
+
+/* Premium category buttons */
+button.btn {
+    transition: 0.3s ease;
+}
+
+button.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+/* ===== LUXURY HERO FINISH ===== */
+
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+#home h1 {
+    text-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+#home p {
+    line-height: 1.7;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+#home .btn {
+    border-radius: 30px;
+    padding: 14px 32px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+#home .btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== GOLDEN SECTION DETAILS ===== */
+
+.section-subtitle {
+    line-height: 1.6;
+}
+
+/* ===== SMOOTH BUTTONS ===== */
+
+.btn,
+.whatsapp-btn,
+.checkout-btn,
+#theme-toggle {
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.checkout-btn:hover,
+#theme-toggle:hover {
+    transform: translateY(-2px);
+}
+</style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">SEHAR Studio</div>
+     <button id="theme-toggle" onclick="toggleDarkMode()">
+    🌙 Dark Mode
+</button>   
+<nav>
+            <a href="#home">Home</a>
+            <a href="#unstitched">Unstitched</a>
+            <a href="#readywear">Ready To Wear</a>
+            <a href="#accessories">Accessories</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Contact</a>
+<a href="javascript:void(0)" id="cart-count" onclick="openCart()" style="color: #d4af37; font-weight: bold;">🛒 Cart (0)</a>
+        </nav>
+    </header>
+<!-- PRODUCT SEARCH -->
+<div style="text-align: center; padding: 15px 0; background: #f4f4f4;">
+    <input 
+        type="text" 
+        id="product-search" 
+        placeholder="🔍 Search products..."
+        onkeyup="searchProducts()"
+        style="width: 80%; max-width: 500px; padding: 12px 18px; border: 1px solid #ddd; border-radius: 25px; font-size: 15px; outline: none;"
+    >
+</div>
+
+<!-- CATEGORY FILTER BUTTONS -->
+<div style="text-align: center; padding: 20px 0; background: #f4f4f4;">
+    <button onclick="filterProducts('all')" class="btn" style="margin: 5px;">All Products</button>
+    <button onclick="filterProducts('unstitched')" class="btn" style="margin: 5px;">Unstitched</button>
+    <button onclick="filterProducts('readywear')" class="btn" style="margin: 5px;">Ready To Wear</button>
+    <button onclick="filterProducts('accessories')" class="btn" style="margin: 5px;">Accessories</button>
+</div>
+
+<!-- CART POPUP -->
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-box">
+        <button class="close-cart" onclick="closeCart()">×</button>
+
+        <h2>🛒 Your Cart</h2>
+
+        <div id="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-total">
+            Total: <span id="cart-total-price">PKR 0</span>
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Checkout
+        </button>
+    </div>
+</div>
+
+<!-- CHECKOUT POPUP -->
+<div id="checkout-modal" class="cart-modal">
+    <div class="cart-box">
+        <button class="close-cart" onclick="closeCheckout()">×</button>
+
+        <h2>🛍️ Checkout</h2>
+
+        <input type="text" id="customer-name" placeholder="Your Name">
+        
+        <input type="tel" id="customer-phone" placeholder="Phone Number">
+        
+        <textarea id="customer-address" placeholder="Delivery Address"></textarea>
+
+        <div class="cart-total">
+            Total: <span id="checkout-total">PKR 0</span>
+        </div>
+
+        <button class="checkout-btn" onclick="placeOrder()">
+            Place Order
+        </button>
+    </div>
+</div>   
+ <!-- Home Banner -->
+    <section id="home">
+        <h1>Summer Festive Collection '26</h1>
+        <p>Experience pure fabrics, rich embroideries, and iconic floral prints crafted for modern elegance.</p>
+        <a href="#unstitched" class="btn">Shop New Arrivals</a>
+    </section>
+
+    <!-- SECTION 1: UNSTITCHED -->
+    <section id="unstitched">
+        <h2 class="section-title">Unstitched Lawn Collection</h2>
+        <p class="section-subtitle">Premium 3-Piece & 2-Piece Lawn Suits</p>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=500" alt="Lawn">
+                <h3>3-Piece Floral Printed Lawn</h3>
+                <p>Includes Printed Dupatta & Trouser</p>
+                <div class="price">PKR 5,490</div>
+               <button onclick="addToCart('3-Piece Floral Printed Lawn')" class="btn" style="border:none; cursor:pointer;">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=500" alt="Embroided">
+                <h3>3-Piece Embroidered Luxury</h3>
+                <p>Chiffon Dupatta with Heavy Neckline</p>
+                <div class="price">PKR 6,990</div>
+               <button onclick="addToCart('3-Piece Embroidered Luxury')" class="btn" style="border:none; cursor:pointer;">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1563178406-4cdc2923acbc?q=80&w=500" alt="2-Piece">
+                <h3>2-Piece Everyday Lawn</h3>
+                <p>Printed Shirt & Trouser Combo</p>
+                <div class="price">PKR 3,290</div>
+               <button onclick="addToCart('2-Piece Everyday Lawn')" class="btn" style="border:none; cursor:pointer;">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: READY TO WEAR -->
+    <section id="readywear">
+        <h2 class="section-title">Ready To Wear</h2>
+        <p class="section-subtitle">Stitched Kurtas, Co-ord Sets & Fusion Outfits</p>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=500" alt="Kurta">
+                <h3>Classic Embroidered Kurta</h3>
+                <p>100% Cotton Breathable Fabric</p>
+                <div class="price">PKR 3,990</div>
+               <button onclick="addToCart('Classic Embroidered Kurta')" class="btn" style="border:none; cursor:pointer;">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=500" alt="Silk Set">
+                <h3>Printed Silk Fusion Set</h3>
+                <p>Modern Silhouette Shirt & Pants</p>
+                <div class="price">PKR 5,490</div>
+                <button onclick="addToCart('Printed Silk Fusion Set')" class="btn" style="border:none; cursor:pointer;">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=500" alt="A-Line">
+                <h3>A-Line Solid Tunic</h3>
+                <p>Minimalist Design with Lace Detail</p>
+                <div class="price">PKR 2,990</div>
+                <button onclick="addToCart('A-Line Solid Tunic')" class="btn" style="border:none; cursor:pointer;">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: ACCESSORIES -->
+    <section id="accessories">
+        <h2 class="section-title">Shoes & Handbags</h2>
+        <p class="section-subtitle">Complete Your Look with Trendy Accessories</p>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=500" alt="Khussa">
+                <h3>Handcrafted Leather Khussas</h3>
+                <p>Traditional Comfort Footwear</p>
+                <div class="price">PKR 2,490</div>
+               <button onclick="addToCart('Handcrafted Leather Khussas')" class="btn" style="border:none; cursor:pointer;">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=500" alt="Bag">
+                <h3>Monogram Tote Bag</h3>
+                <p>Spacious Everyday Leather Bag</p>
+                <div class="price">PKR 4,290</div>
+               <button onclick="addToCart('Monogram Tote Bag')" class="btn" style="border:none; cursor:pointer;">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: ABOUT -->
+    <section id="about">
+        <h2 class="section-title">Our Story</h2>
+        <p class="section-subtitle">Redefining Fashion in Pakistan</p>
+        <div class="about-box">
+            <p>SEHAR Studio is a modern fashion label born to combine 100% pure fabric with thoughtful design aesthetics. Our range of clothing caters to all tastes—from daily lawn wear to formal silk ensembles.</p>
+            <p style="margin-top: 15px;">We focus on bringing high quality, premium designer wear at affordable prices straight to your doorstep.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT -->
+    <section id="contact" style="background-color: #f7f7f7;">
+        <h2 class="section-title">Contact & Orders</h2>
+        <p class="section-subtitle">We are here to help you 24/7</p>
+
+        <div class="contact-card">
+            <h3>Place Your Order Directly</h3>
+            <p style="margin-top: 10px; color: #666;">Need size guidance or quick checkout? Click below to chat with our representative on WhatsApp.</p>
+            
+           <a href="https://wa.me/923474372450" target="_blank" class="whatsapp-btn">
+    💬 Chat on WhatsApp
+</a>
+            <div class="store-info">
+                <p><strong>📍 Based in:</strong> Gulberg, Lahore, Pakistan</p>
+                <p><strong>📧 Email:</strong> sehar.studio.official@gmail.com</p>
+                <p><strong>⏰ Timings:</strong> Monday – Sunday (11:00 AM – 10:00 PM)</p>
+            </div>
+        </div>
+<!-- BACK TO TOP BUTTON -->
+<button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ↑
+</button>
+   
+     <script>
+
+let totalCartItems = 0;
+let cartTotal = 0;
+
+// ================= ADD TO CART =================
+function addToCart(productName) {
+
+    let price = 0;
+
+    if (productName === "3-Piece Floral Printed Lawn") {
+        price = 5490;
+    }
+    else if (productName === "3-Piece Embroidered Luxury") {
+        price = 6990;
+    }
+    else if (productName === "2-Piece Everyday Lawn") {
+        price = 3290;
+    }
+    else if (productName === "Classic Embroidered Kurta") {
+        price = 3990;
+    }
+    else if (productName === "Printed Silk Fusion Set") {
+        price = 5490;
+    }
+    else if (productName === "A-Line Solid Tunic") {
+        price = 2990;
+    }
+    else if (productName === "Handcrafted Leather Khussas") {
+        price = 2490;
+    }
+    else if (productName === "Monogram Tote Bag") {
+        price = 4290;
+    }
+
+    totalCartItems++;
+    cartTotal += price;
+
+    document.getElementById("cart-count").innerText =
+        "🛒 Cart (" + totalCartItems + ")";
+
+    let cartItems = document.getElementById("cart-items");
+
+    let emptyCart = document.querySelector(".empty-cart");
+
+    if (emptyCart) {
+        emptyCart.style.display = "none";
+    }
+
+    let item = document.createElement("div");
+
+    item.className = "cart-item";
+    item.dataset.price = price;
+
+    item.innerHTML =
+        "<div class='cart-item-info'>" +
+            "<h4>" + productName + "</h4>" +
+            "<p>PKR " + price.toLocaleString() + "</p>" +
+        "</div>" +
+
+        "<div class='quantity-controls'>" +
+            "<button onclick='decreaseQuantity(this)'>−</button>" +
+            "<span>1</span>" +
+            "<button onclick='increaseQuantity(this)'>+</button>" +
+        "</div>" +
+
+        "<button class='remove-item' onclick='removeFromCart(this, " + price + ")'>" +
+            "Remove" +
+        "</button>";
+
+    cartItems.appendChild(item);
+
+    document.getElementById("cart-total-price").innerText =
+        "PKR " + cartTotal.toLocaleString();
+
+    alert(
+        "✨ Added to Cart!\n\n" +
+        productName +
+        "\nPrice: PKR " +
+        price.toLocaleString()
+    );
+}
+
+
+// ================= REMOVE FROM CART =================
+function removeFromCart(button, price) {
+
+    button.closest(".cart-item").remove();
+
+    totalCartItems--;
+    cartTotal -= price;
+
+    document.getElementById("cart-count").innerText =
+        "🛒 Cart (" + totalCartItems + ")";
+
+    document.getElementById("cart-total-price").innerText =
+        "PKR " + cartTotal.toLocaleString();
+
+    if (totalCartItems === 0) {
+        document.querySelector(".empty-cart").style.display = "block";
+    }
+}
+
+
+// ================= INCREASE QUANTITY =================
+function increaseQuantity(button) {
+
+    let quantity = button.previousElementSibling;
+    let item = button.closest(".cart-item");
+    let price = parseInt(item.dataset.price);
+
+    let newQuantity = parseInt(quantity.innerText) + 1;
+
+    quantity.innerText = newQuantity;
+
+    let itemPrice = item.querySelector(".cart-item-info p");
+
+    itemPrice.innerText =
+        "PKR " + (price * newQuantity).toLocaleString();
+
+    totalCartItems++;
+    cartTotal += price;
+
+    document.getElementById("cart-count").innerText =
+        "🛒 Cart (" + totalCartItems + ")";
+
+    document.getElementById("cart-total-price").innerText =
+        "PKR " + cartTotal.toLocaleString();
+}
+
+
+// ================= DECREASE QUANTITY =================
+function decreaseQuantity(button) {
+
+    let quantity = button.nextElementSibling;
+    let item = button.closest(".cart-item");
+    let price = parseInt(item.dataset.price);
+
+    let currentQuantity = parseInt(quantity.innerText);
+
+    if (currentQuantity > 1) {
+
+        let newQuantity = currentQuantity - 1;
+
+        quantity.innerText = newQuantity;
+
+        let itemPrice = item.querySelector(".cart-item-info p");
+
+        itemPrice.innerText =
+            "PKR " + (price * newQuantity).toLocaleString();
+
+        totalCartItems--;
+        cartTotal -= price;
+
+        document.getElementById("cart-count").innerText =
+            "🛒 Cart (" + totalCartItems + ")";
+
+        document.getElementById("cart-total-price").innerText =
+            "PKR " + cartTotal.toLocaleString();
+    }
+}
+
+
+// ================= OPEN CART =================
+function openCart() {
+
+    document.getElementById("cart-modal").style.display = "flex";
+
+}
+
+
+// ================= CLOSE CART =================
+function closeCart() {
+
+    document.getElementById("cart-modal").style.display = "none";
+
+}
+
+
+// ================= DARK MODE =================
+function toggleDarkMode() {
+
+    document.body.classList.toggle("dark-mode");
+
+}
+
+
+// ================= CHECKOUT =================
+function checkout() {
+
+    if (totalCartItems === 0) {
+
+        alert("Your cart is empty!");
+
+        return;
+    }
+
+    document.getElementById("checkout-total").innerText =
+        "PKR " + cartTotal.toLocaleString();
+
+    document.getElementById("checkout-modal").style.display = "flex";
+
+}
+
+
+// ================= CLOSE CHECKOUT =================
+function closeCheckout() {
+
+    document.getElementById("checkout-modal").style.display = "none";
+
+}
+
+
+// ================= PLACE ORDER =================
+function placeOrder() {
+
+    let name = document.getElementById("customer-name").value;
+    let phone = document.getElementById("customer-phone").value;
+    let address = document.getElementById("customer-address").value;
+
+    if (name === "" || phone === "" || address === "") {
+
+        alert("Please fill in all the details.");
+
+        return;
+    }
+
+    let whatsappNumber = "923474372450";
+
+    let rawMessage =
+        "🛍️ SEHAR STUDIO ORDER\n\n" +
+        "👤 Customer: " + name + "\n" +
+        "📞 Phone: " + phone + "\n" +
+        "📍 Address: " + address + "\n" +
+        "💰 Total: PKR " + cartTotal.toLocaleString();
+
+    let encodedMessage = encodeURIComponent(rawMessage);
+
+    let whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodedMessage;
+
+    window.open(whatsappURL, "_blank");
+
+    document.getElementById("checkout-modal").style.display = "none";
+document.getElementById("thankyou-modal").style.display = "flex";
+}
+
+
+// ================= FILTER PRODUCTS =================
+function filterProducts(categoryName) {
+
+    let unstitchedSec = document.getElementById("unstitched");
+    let readywearSec = document.getElementById("readywear");
+    let accessoriesSec = document.getElementById("accessories");
+
+    if (categoryName === "all") {
+
+        unstitchedSec.style.display = "block";
+        readywearSec.style.display = "block";
+        accessoriesSec.style.display = "block";
+
+    }
+
+    else if (categoryName === "unstitched") {
+
+        unstitchedSec.style.display = "block";
+        readywearSec.style.display = "none";
+        accessoriesSec.style.display = "none";
+
+    }
+
+    else if (categoryName === "readywear") {
+
+        unstitchedSec.style.display = "none";
+        readywearSec.style.display = "block";
+        accessoriesSec.style.display = "none";
+
+    }
+
+    else if (categoryName === "accessories") {
+
+        unstitchedSec.style.display = "none";
+        readywearSec.style.display = "none";
+        accessoriesSec.style.display = "block";
+    }
+}
+
+
+// ================= PRODUCT SEARCH =================
+function searchProducts() {
+
+    let searchText =
+        document.getElementById("product-search").value.toLowerCase();
+
+    let products =
+        document.querySelectorAll(".product-card");
+
+    products.forEach(function(product) {
+
+        let productName =
+            product.querySelector("h3").innerText.toLowerCase();
+
+        if (productName.includes(searchText)) {
+            product.style.display = "block";
+        }
+        else {
+            product.style.display = "none";
+        }
+
+    });
+}
+
+</script>
+<footer class="professional-footer">
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>SEHAR Studio</h2>
+            <p>
+                Modern fashion with timeless elegance.
+                Discover premium clothing and accessories
+                designed for every occasion.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#unstitched">Unstitched</a>
+            <a href="#readywear">Ready To Wear</a>
+            <a href="#accessories">Accessories</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Customer Care</h3>
+            <a href="#contact">Contact Us</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Order Support</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 SEHAR Studio. All Rights Reserved.</p>
+        <p>Made with ♥ for modern fashion.</p>
+    </div>
+</footer>
+<!-- THANK YOU POPUP -->
+<div id="thankyou-modal" class="cart-modal">
+    <div class="cart-box" style="text-align: center;">
+        
+        <div style="font-size: 55px; margin-bottom: 10px;">✨</div>
+
+        <h2 style="color: #d4af37;">
+            Thank You for Shopping!
+        </h2>
+
+        <p style="font-size: 18px; margin: 15px 0;">
+            Your order has been placed successfully. 🛍️
+        </p>
+
+        <p style="color: #666; line-height: 1.6;">
+            We truly appreciate your trust and choice.
+            <br>
+            Our team will contact you shortly to confirm your order.
+        </p>
+
+        <p style="margin-top: 20px; font-weight: bold;">
+            💛 Thank you for choosing SEHAR Studio!
+        </p>
+
+        <button class="checkout-btn"
+                onclick="document.getElementById('thankyou-modal').style.display='none'"
+                style="margin-top: 20px;">
+            Continue Shopping
+        </button>
+
+    </div>
+</div>
+</body>
+</html>
